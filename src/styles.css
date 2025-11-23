@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container, .chat-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #ff0000; /* red border */
+  border-radius: 10px;
+  width: 350px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.login-container input, .chat-input input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ff0000; /* red border */
+  font-size: 16px;
+}
+
+.login-container button, .chat-input button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff0000; /* red button */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.chat-messages {
+  height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ff0000; /* red border */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.message {
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  max-width: 80%;
+  font-size: 14px;
+}
+
+.message.user {
+  background-color: #ffcccc; /* light red for user messages */
+  color: #000;
+  margin-left: auto;
+}
+
+.message.ai {
+  background-color: #ffe6e6; /* very light red for AI messages */
+  color: #000;
+  margin-right: auto;
+}
+
+.chat-input {
+  display: flex;
+  gap: 8px;
+}
